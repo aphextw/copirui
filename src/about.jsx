@@ -37,28 +37,39 @@ export default function about() {
       </div>
       <div style={{ display: "flex" }}>
         <div className="kalendar">
-          {" "}
-          <h3>
-            <span
-              style={{
-                color: "#F73D48",
-                fontWeight: "lighter",
-                fontSize: "14px",
-              }}
-            >
-              {" "}
-              Сегодня {uroki} урока
-            </span>
-          </h3>
-          <img
-            style={{ marginLeft: "150px" }}
-            src="./src/images/calendar.png"
-            alt="error"
-          />
-          <h1 style={{ fontSize: "20px" }}>Календарь занятий</h1>
-          <h3 style={{ fontWeight: "lighter", color: "#585858" }}>
-            Через {2} дня выходной
-          </h3>
+          <div style={{ display: "flex" }}>
+            <div>
+              <h3>
+                <span
+                  style={{
+                    color: "#F73D48",
+                    fontWeight: "lighter",
+                    fontSize: "14px",
+                  }}
+                >
+                  {" "}
+                  Сегодня {uroki} урока
+                </span>
+              </h3>
+              <h1 style={{ whiteSpace: "nowrap", fontSize: "20px" }}>
+                Календарь занятий
+              </h1>
+              <h3
+                style={{
+                  whiteSpace: "nowrap",
+                  fontWeight: "lighter",
+                  color: "#585858",
+                }}
+              >
+                Через {2} дня выходной
+              </h3>
+            </div>
+            <img
+              style={{ marginLeft: "70px", height: "61px" }}
+              src="./src/images/calendar.png"
+              alt="error"
+            />
+          </div>
           <Button
             style={{
               backgroundColor: "#fff",
